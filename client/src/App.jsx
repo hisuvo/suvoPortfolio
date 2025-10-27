@@ -1,12 +1,22 @@
-import "./App.css";
+import Button from "./shared/Button";
+import DemoButton from "./shared/DemoButton";
+import Input from "./shared/Input";
+import LiveButton from "./shared/LiveButton";
+import Textarea from "./shared/Textarea";
 
 function App() {
   return (
     <div className="app_style">
-      <h1 className="text-4xl">This is Portfolio website</h1>
-      <p className="text-2xl">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Button>Contact me !!</Button>
+      <DemoButton>Client</DemoButton>
+      <DemoButton>Backend</DemoButton>
+      <LiveButton />
+      <br />
+      <br />
+      <br />
+      <Input placeholder={"Name"} />
+      <br />
+      <Textarea placeholder={"Enter your info .."} />
     </div>
   );
 }
