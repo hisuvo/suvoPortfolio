@@ -10,10 +10,7 @@ function App() {
   return (
     <div className="container mx-auto">
       <Navbar />
-      <Button>Contact me !!</Button>
-      <DemoButton>Client</DemoButton>
-      <DemoButton>Backend</DemoButton>
-      <LiveButton>{<Telescope size={18} />}</LiveButton>
+
       <br />
       <div className="w-full max-w-8/12 mx-auto my-8">
         <Title />

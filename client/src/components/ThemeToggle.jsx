@@ -21,8 +21,8 @@ const ThemeToggle = () => {
 
   return (
     <div>
-      <Button onClick={toggleTheme}>
-        {theme === "dark" ? <LuSun /> : <LuMoon />}
+      <Button className={"border-none"} onClick={toggleTheme}>
+        {theme === "dark" ? <LuSun size={28} /> : <LuMoon size={28} />}
       </Button>
     </div>
   );

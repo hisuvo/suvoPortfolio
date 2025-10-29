@@ -4,6 +4,8 @@
 
 @theme {
   --color-secondary-clr: #c778dd;
+  --color-gray-clr: #abb2bf;
+  --color-dark-clr: #2c3036;
   --font-fira-code: "Fira Code", monospace;
 }
 

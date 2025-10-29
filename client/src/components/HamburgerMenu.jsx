@@ -1,43 +1,36 @@
 import { Facebook, Github, Hash, Linkedin, Mail } from "lucide-react";
+import menuList from "../../public/menuList";
+import { useCallback, useState } from "react";
 
-const HamburgerMenu = () => {
+const HamburgerMenu = ({ isClose }) => {
+  const [isActive, setIsActive] = useState("home");
+
+  const activeToggle = useCallback((e, value) => {
+    e.preventDefault();
+    setIsActive(value);
+  }, []);
+
   return (
-    <div className="w-full max-w-md min-h-screen bg-secondary-clr/5 px-4 py-8 flex flex-col">
+    <div className="w-full max-w-md min-h-screen bg-dark-clr px-4 py-8 flex flex-col sm:hidden">
       {/* Menu list */}
 
-      <ul className="text-3xl space-y-8 font-medium top-0 flex-grow">
-        <li>
-          <a
-            href=""
-            className="flex items-center gap-4 w-full h-full cursor-pointer"
+      <ul className="text-3xl space-y-8 font-medium text-gray-clr top-0 flex-grow">
+        {menuList.map((list, indx) => (
+          <li
+            key={indx}
+            className={isActive === list?.name ? "text-white" : ""}
           >
-            <Hash /> home
-          </a>
-        </li>
-        <li>
-          <a
-            href=""
-            className="flex items-center gap-4 w-full h-full cursor-pointer"
-          >
-            <Hash /> work
-          </a>
-        </li>
-        <li>
-          <a
-            href=""
-            className="flex items-center gap-4 w-full h-full cursor-pointer"
-          >
-            <Hash /> about-me
-          </a>
-        </li>
-        <li>
-          <a
-            href=""
-            className="flex items-center gap-4 w-full h-full cursor-pointer"
-          >
-            <Hash /> contacts
-          </a>
-        </li>
+            <a
+              onClick={(e) => {
+                isClose(), activeToggle(e, list?.name);
+              }}
+              href={list?.name}
+              className="flex items-center gap-4 w-full h-full cursor-pointer"
+            >
+              <Hash /> {list?.label}
+            </a>
+          </li>
+        ))}
       </ul>
 
       {/* social media */}
