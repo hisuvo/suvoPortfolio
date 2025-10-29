@@ -1,3 +1,4 @@
+import Navbar from "./components/Navbar";
 import Button from "./shared/Button";
 import DemoButton from "./shared/DemoButton";
 import Input from "./shared/Input";
@@ -7,6 +8,7 @@ import Textarea from "./shared/Textarea";
 function App() {
   return (
     <div className="app_style">
+      <Navbar />
       <Button>Contact me !!</Button>
       <DemoButton>Client</DemoButton>
       <DemoButton>Backend</DemoButton>

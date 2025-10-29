@@ -1,7 +1,12 @@
 import React from "react";
+import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
-  return <div>This is navbar</div>;
+  return (
+    <div>
+      <ThemeToggle />
+    </div>
+  );
 };
 
 export default Navbar;
