@@ -4,7 +4,7 @@ const Button = ({ onClick, children }) => {
   return (
     <button
       onClick={onClick}
-      className="border px-3 py-2 bg-transparent hover:bg-amber-100/5"
+      className="border px-4 py-2 border-[#C778DD] font-medium bg-transparent hover:bg-amber-100/5"
     >
       {children}
     </button>

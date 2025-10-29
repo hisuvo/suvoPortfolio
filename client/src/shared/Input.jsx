@@ -7,7 +7,7 @@ const Input = ({ type, placeholder }) => {
       placeholder={placeholder}
       name=""
       id=""
-      className="w-full border py-2 px-4 outline-0 active:bg-amber-100/5 hover:bg-amber-100/5"
+      className="w-full border py-2 px-4 outline-0 focus:bg-secondary-clr/20 active:bg-secondary-clr/40 hover:bg-secondary-clr/40"
     />
   );
 };

@@ -2,6 +2,11 @@
 
 @import "tailwindcss";
 
+@theme {
+  --color-secondary-clr: #c778dd;
+  --font-fira-code: "Fira Code", monospace;
+}
+
 /* Default light mode */
 body {
   background-color: #ffffff;
@@ -15,4 +20,15 @@ body {
 [data-theme="dark"] body {
   background-color: #1e1e1e;
   color: #ffffff;
+}
+
+/* placeholder color setup */
+input::placeholder,
+textarea::placeholder {
+  color: #888;
+  opacity: 1;
+}
+
+.bg_seconday {
+  background-color: "#C778DD";
 }

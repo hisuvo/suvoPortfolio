@@ -5,7 +5,7 @@ import Textarea from "../shared/Textarea";
 const Contact = () => {
   return (
     <div className="space-y-4">
-      <div className="flex gap-4 w-full">
+      <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 w-full">
         <Input type={"text"} placeholder={"Name"} />
         <Input type={"email"} placeholder={"Email"} />
       </div>

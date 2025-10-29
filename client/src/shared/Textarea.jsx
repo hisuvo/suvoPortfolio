@@ -8,7 +8,7 @@ const Textarea = ({ placeholder, name }) => {
       cols="8"
       rows="6"
       placeholder={placeholder}
-      className="w-full  border py-2 px-4 outline-0 active:bg-amber-100/5 hover:bg-amber-100/5"
+      className="w-full border py-2 px-4 outline-0 focus:bg-secondary-clr/20 active:bg-secondary-clr/30 hover:bg-secondary-clr/20"
     ></textarea>
   );
 };
