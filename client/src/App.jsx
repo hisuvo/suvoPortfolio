@@ -1,3 +1,4 @@
+import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Button from "./shared/Button";
 import DemoButton from "./shared/DemoButton";
@@ -16,9 +17,7 @@ function App() {
       <br />
       <br />
       <br />
-      <Input placeholder={"Name"} />
-      <br />
-      <Textarea placeholder={"Enter your info .."} />
+      <Contact />
     </div>
   );
 }
