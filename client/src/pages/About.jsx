@@ -1,9 +1,10 @@
 import React from "react";
+import SubTitle from "../shared/SubTitle";
 
 const About = () => {
   return (
     <div>
-      <h2>This is about page</h2>
+      <SubTitle icon={"/"} title={"About-me"} text={"Who am i?"} />
     </div>
   );
 };

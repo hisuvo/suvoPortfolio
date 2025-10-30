@@ -1,14 +1,12 @@
 import { Hash } from "lucide-react";
-import React from "react";
 
-const Title = ({ title }) => {
+const SecondTitle = ({ title }) => {
   return (
     <div className="text-3xl flex items-center">
       <Hash className="text-secondary-clr" />
       <h2>{title}</h2>
-      <hr className="w-full max-w-[18rem] h-[0.90px] border-none bg-secondary-clr mx-4" />
     </div>
   );
 };
 
-export default Title;
+export default SecondTitle;

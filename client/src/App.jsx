@@ -1,22 +1,14 @@
-import { Telescope } from "lucide-react";
-import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
-import Button from "./shared/Button";
-import DemoButton from "./shared/DemoButton";
-import LiveButton from "./shared/LiveButton";
-import Title from "./shared/Title";
+import { Outlet } from "react-router";
 
 function App() {
   return (
-    <div className="container mx-auto">
+    <div className="w-full max-w-[1024px] mx-auto">
       <Navbar />
-
-      <br />
-      <div className="w-full max-w-8/12 mx-auto my-8">
-        <Title />
-        <br />
-        <Contact />
-      </div>
+      <main>
+        <Outlet />
+      </main>
+      <footer></footer>
     </div>
   );
 }

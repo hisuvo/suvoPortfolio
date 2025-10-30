@@ -1,9 +1,10 @@
 import { Facebook, Github, Hash, Linkedin, Mail } from "lucide-react";
 import menuList from "../../public/menuList";
 import { useCallback, useState } from "react";
+import { Link } from "react-router";
 
-const HamburgerMenu = ({ isClose }) => {
-  const [isActive, setIsActive] = useState("home");
+const HamburgerMenu = () => {
+  const [isActive, setIsActive] = useState("/");
 
   const activeToggle = useCallback((e, value) => {
     e.preventDefault();
@@ -18,17 +19,17 @@ const HamburgerMenu = ({ isClose }) => {
         {menuList.map((list, indx) => (
           <li
             key={indx}
+            onClick={(e) => {
+              activeToggle(e, list?.name);
+            }}
             className={isActive === list?.name ? "text-white" : ""}
           >
-            <a
-              onClick={(e) => {
-                isClose(), activeToggle(e, list?.name);
-              }}
-              href={list?.name}
-              className="flex items-center gap-4 w-full h-full cursor-pointer"
+            <Link
+              to={list?.name}
+              className="flex items-cente gap-4 w-full h-full cursor-pointer"
             >
               <Hash /> {list?.label}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

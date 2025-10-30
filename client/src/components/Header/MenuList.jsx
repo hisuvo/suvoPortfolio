@@ -1,6 +1,7 @@
 import { Hash } from "lucide-react";
 import { useCallback, useState } from "react";
 import menuList from "../../../public/menuList";
+import { Link } from "react-router";
 
 const MenuList = () => {
   const [isActive, setIsActive] = useState("home");
@@ -19,10 +20,10 @@ const MenuList = () => {
             onClick={(e) => activeToggle(e, list?.name)}
             className={isActive === list?.name ? "dark:text-white" : ""}
           >
-            <a href="/" className="flex items-center">
+            <Link to={list?.name} className="flex items-center">
               <Hash size={16} className="text-secondary-clr" />
               {list?.label}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

@@ -1,9 +1,7 @@
-import React from "react";
-
 const Home = () => {
   return (
-    <div>
-      <h2>This is Home page</h2>
+    <div className="mt-8">
+      <h1>This is hom page</h1>
     </div>
   );
 };

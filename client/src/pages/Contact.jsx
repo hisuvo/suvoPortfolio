@@ -1,9 +1,10 @@
 import React from "react";
+import SubTitle from "../shared/SubTitle";
 
 const Contact = () => {
   return (
     <div>
-      <h2>This is contacts page</h2>
+      <SubTitle icon={"/"} title={"Contacts"} text={"Contact with me!"} />
     </div>
   );
 };
