@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import { Outlet } from "react-router";
 
@@ -8,7 +9,10 @@ function App() {
       <main>
         <Outlet />
       </main>
-      <footer></footer>
+      <hr className="mt-8" />
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
