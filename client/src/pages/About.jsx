@@ -1,6 +1,7 @@
 import React from "react";
 import SubTitle from "../shared/SubTitle";
 import Skills from "../components/Skills";
+import FunFacts from "../components/FunFacts";
 
 const About = () => {
   return (
@@ -11,9 +12,18 @@ const About = () => {
       <div></div>
 
       {/* About Skills */}
-      <div className="">
+      <div>
         <SubTitle icon={"#"} title={"Skills"} />
         <Skills />
+      </div>
+
+      {/* About My Fun Facts */}
+      <div className="py-[84px]">
+        <SubTitle icon={"#"} title={"my-fun-facts"} />
+
+        <div className="">
+          <FunFacts />
+        </div>
       </div>
     </div>
   );

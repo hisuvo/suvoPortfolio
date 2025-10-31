@@ -4,16 +4,23 @@ import { Outlet } from "react-router";
 
 function App() {
   return (
-    <div className="w-full max-w-[1024px] mx-auto">
-      <Navbar />
-      <main>
+    <>
+      <header className="w-full max-w-[1024px] mx-auto">
+        <Navbar />
+      </header>
+
+      {/* body of portfolio*/}
+      <main className="w-full max-w-[1024px] mx-auto">
         <Outlet />
       </main>
+
       <hr className="mt-8" />
-      <footer>
+
+      {/* footer of portfolio */}
+      <footer className="w-full max-w-[1024px] mx-auto">
         <Footer />
       </footer>
-    </div>
+    </>
   );
 }
 
