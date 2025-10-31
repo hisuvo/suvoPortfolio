@@ -2,7 +2,7 @@ import Button from "../shared/Button";
 import Input from "../shared/Input";
 import Textarea from "../shared/Textarea";
 
-const Contact = () => {
+const ContactForm = () => {
   return (
     <div className="space-y-4">
       <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 w-full">
@@ -11,9 +11,9 @@ const Contact = () => {
       </div>
       <Input type={"text"} placeholder={"Title"} />
       <Textarea placeholder={"Message"} />
-      <Button>Send</Button>
+      <Button className={"w-full"}>Send</Button>
     </div>
   );
 };
 
-export default Contact;
+export default ContactForm;

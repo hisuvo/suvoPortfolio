@@ -6,6 +6,7 @@ import image2 from "./Rectangle 22 (2).png";
 import image3 from "./Rectangle 22 (3).png";
 import image4 from "./Rectangle 22.png";
 import image5 from "./ChertNodes.png";
+import self_image from "./about_image.png";
 
 export const assets = {
   logo_light,
@@ -16,4 +17,5 @@ export const assets = {
   image3,
   image4,
   image5,
+  self_image,
 };

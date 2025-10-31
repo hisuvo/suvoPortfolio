@@ -8,17 +8,17 @@ const Works = () => {
       <SubTitle icon={"/"} title={"Projects"} text={"List of my Projects"} />
 
       {/* Completes App section */}
-      <div className="mb-8">
+      <div className="mb-12">
         <SecondTitle title={"completes-apps"} />
 
         {/* project list */}
-        <div className="mt-4">
+        <div className="mt-12">
           <ProjectList />
         </div>
       </div>
 
       {/* Small Project */}
-      <div>
+      <div className="mb-12">
         <SecondTitle title={"small prjects"} />
       </div>
     </div>
