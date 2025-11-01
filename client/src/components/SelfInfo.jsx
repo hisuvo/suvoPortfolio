@@ -1,8 +1,8 @@
-import React from "react";
+import { assets } from "../assets/assets";
 
 const SelfInfo = () => {
   return (
-    <>
+    <div div className="flex flex-col-reverse gap-4 md:flex-row items-center">
       {/* self description */}
       <div className="w-full max-w-[650px] text-gray-clr space-y-4">
         <p>Hello, i’m Datta!</p>
@@ -19,7 +19,15 @@ const SelfInfo = () => {
           newest technologies and frameworks.
         </p>
       </div>
-    </>
+
+      <div className="max-w-[300px] max-h-[500px]">
+        <img
+          className="w-full object-cover border-b"
+          src={assets.self_image}
+          alt="self image"
+        />
+      </div>
+    </div>
   );
 };
 

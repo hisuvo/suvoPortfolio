@@ -10,7 +10,7 @@ function App() {
       </header>
 
       {/* body of portfolio*/}
-      <main className="w-full max-w-[1024px] mx-auto">
+      <main className="w-full max-w-[1024px] mx-auto p-4 lg:p-0">
         <Outlet />
       </main>
 

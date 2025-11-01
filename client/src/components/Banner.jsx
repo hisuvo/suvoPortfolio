@@ -4,10 +4,10 @@ import Button from "../shared/Button";
 
 const Banner = () => {
   return (
-    <div className="flex items-center gap-4">
+    <div className="flex flex-col md:flex-row justify-between items-center gap-4">
       {/* letf side */}
       <div className="w-full max-w-[532px]">
-        <h1 className="text-2xl md:text-[2rem] font-semibold">
+        <h1 className="text-3xl md:text-[2rem] font-semibold">
           Suvo Datta is a{" "}
           <b className="text-secondary-clr">Junior Web Application Developer</b>{" "}
           and <b className="text-secondary-clr">Probelem solver</b>
