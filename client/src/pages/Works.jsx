@@ -4,7 +4,7 @@ import SubTitle from "../shared/SubTitle";
 
 const Works = () => {
   return (
-    <div>
+    <div className="py-[84px]">
       <SubTitle icon={"/"} title={"Projects"} text={"List of my Projects"} />
 
       {/* Completes App section */}

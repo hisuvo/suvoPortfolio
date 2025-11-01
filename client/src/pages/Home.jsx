@@ -5,6 +5,7 @@ import ProjectList from "../components/ProjectList";
 import Title from "../shared/Title";
 import Skills from "../components/Skills";
 import SelfInfo from "../components/SelfInfo";
+import ContactForm from "../components/ContactForm";
 
 const Home = () => {
   return (
@@ -55,7 +56,18 @@ const Home = () => {
       </div>
 
       {/* Contact Components */}
-      <div></div>
+      <div className="my-20 space-y-12">
+        <Title title={"contacts"} />
+
+        {/* contact form */}
+        <div className="grid grid-cols-1 sm:grid-cols-5">
+          <div className="sm:col-span-2"></div>
+
+          <div className="sm:col-span-3">
+            <ContactForm />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

@@ -18,6 +18,11 @@ body {
   font-style: normal;
 }
 
+/* scrollbar off */
+::-webkit-scrollbar {
+  display: none;
+}
+
 /* Dark mode */
 [data-theme="dark"] body {
   background-color: #2c3036;

@@ -20,7 +20,7 @@ const SelfInfo = () => {
         </p>
       </div>
 
-      <div className="max-w-[300px] max-h-[500px]">
+      <div className="max-w-[300px] max-h-[450px]">
         <img
           className="w-full object-cover border-b"
           src={assets.self_image}

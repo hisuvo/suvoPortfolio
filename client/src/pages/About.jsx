@@ -5,7 +5,7 @@ import SelfInfo from "../components/SelfInfo";
 
 const About = () => {
   return (
-    <div>
+    <div className="py-[84px]">
       {/* About me  */}
       <SubTitle icon={"/"} title={"About-me"} text={"Who am i?"} />
 
@@ -15,13 +15,13 @@ const About = () => {
       </div>
 
       {/* About Skills */}
-      <div>
+      <div className="pt-20">
         <SubTitle icon={"#"} title={"Skills"} />
         <Skills />
       </div>
 
       {/* About My Fun Facts */}
-      <div className="py-[84px]">
+      <div className="pt-20">
         <SubTitle icon={"#"} title={"my-fun-facts"} />
 
         <div>
