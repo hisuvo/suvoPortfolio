@@ -1,7 +1,9 @@
+import Banner from "../components/Banner";
+
 const Home = () => {
   return (
     <div className="mt-8">
-      <h1>This is hom page</h1>
+      <Banner />
     </div>
   );
 };

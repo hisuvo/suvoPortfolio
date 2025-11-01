@@ -7,6 +7,7 @@ import image3 from "./Rectangle 22 (3).png";
 import image4 from "./Rectangle 22.png";
 import image5 from "./ChertNodes.png";
 import self_image from "./about_image.png";
+import banner_image from "./banner_img.png";
 
 export const assets = {
   logo_light,
@@ -18,4 +19,5 @@ export const assets = {
   image4,
   image5,
   self_image,
+  banner_image,
 };
